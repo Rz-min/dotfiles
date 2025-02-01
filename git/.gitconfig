@@ -1,0 +1,12 @@
+
+[alias]
+	co = checkout
+	br = branch
+	sw = switch
+	st = status
+	ci = commit
+	lo = log --oneline
+	brd = branch -D
+[user]
+	name = Rz-min
+	email = rui.iizumi.20@gmail.com
