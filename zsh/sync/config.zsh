@@ -1,15 +1,18 @@
-HISTFILE=~/.zsh_history
-HISTSIZE=30000
-SAVEHIST=30000
-
-setopt inc_append_history
-setopt share_history
+export HISTFILE=~/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=100000
+export HISTFILESIZE=100000
 setopt hist_ignore_dups
 setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_reduce_blanks
+setopt hist_no_store
+setopt inc_append_history
+setopt share_history
+
 setopt auto_cd
 setopt auto_pushd
 setopt auto_param_keys
-setopt hist_reduce_blanks
 
 # === Rust ===
 source "$HOME/.cargo/env"
