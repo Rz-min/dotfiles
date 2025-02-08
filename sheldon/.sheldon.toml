@@ -1,0 +1,22 @@
+shell = "zsh"
+
+apply = ["defer"]
+
+[plugins.zsh-defer]
+github = "romkatv/zsh-defer"
+apply = ["source"]
+
+[templates]
+defer = "{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}"
+
+[plugins.syntax-highlighting]
+github = "zdharma/fast-syntax-highlighting"
+
+[plugins.local-defers]
+local = "~/dotfiles/zsh"
+use = ["{!sync,*}.zsh"]
+
+[plugins.local-sync]
+local = "~/dotfiles/zsh"
+use = ["sync/*.zsh"]
+apply = ["source"]
