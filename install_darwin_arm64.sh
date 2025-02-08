@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 echo "Start Mac setup.."
 
@@ -16,5 +16,14 @@ else
   echo "Homebrew already installed."
 fi
 
-source ~/dotfiles/brew-init.sh
+source "$DOTFILES_DIR/brew-init.sh"
 
+# === Programming Language ===
+source "$DOTFILES_DIR/lang/rust/install.sh"
+source "$DOTFILES_DIR/lang/node/install.sh"
+source "$DOTFILES_DIR/lang/python/install.sh"
+source "$DOTFILES_DIR/lang/deno/install.sh"
+source "$DOTFILES_DIR/lang/go/install.sh"
+
+# === Starship ===
+source "$DOTFILES_DIR/starship/install.sh"
