@@ -20,3 +20,15 @@ use = ["{!sync,*}.zsh"]
 local = "~/dotfiles/zsh"
 use = ["sync/*.zsh"]
 apply = ["source"]
+
+[plugins.zsh-autosuggestions]
+github = "zsh-users/zsh-autosuggestions"
+apply = ["source"]
+
+[plugins.zsh-completions]
+github = "zsh-users/zsh-completions"
+apply = ["source"]
+
+[plugins.zsh-syntax-highlighting]
+github = "zsh-users/zsh-syntax-highlighting"
+apply = ["source"]
